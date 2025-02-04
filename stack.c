@@ -5,7 +5,7 @@ int stack[MAX];
 
 int top = -1;
 
-void push(int x)
+void push(int x) // complexity O(1)
 {
   if (top == MAX - 1)
   {
@@ -16,7 +16,7 @@ void push(int x)
   stack[++top] = x;
 }
 
-void pop()
+void pop() // complexity O(1)
 {
   if (top == -1)
   {
@@ -27,7 +27,7 @@ void pop()
   top--;
 }
 
-int peek()
+int peek() // complexity O(1)
 {
   if (top == -1)
   {
@@ -38,7 +38,7 @@ int peek()
   return stack[top];
 }
 
-int display()
+int display() // complexity O(n)
 {
   if (top == -1)
   {
